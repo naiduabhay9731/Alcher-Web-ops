@@ -78,4 +78,18 @@ th,tr,td {
      top: 45%;
      
 }
-
+.l1{
+     position: absolute;
+     left:40% ;
+     bottom: 0%;
+}
+.l2{
+     position: absolute;
+     left:45% ;
+     bottom: 0%;
+}
+.l3{
+     position: absolute;
+     left:50% ;
+     bottom: 0%;
+}

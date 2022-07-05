@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link   rel="stylesheet" href="style.css"
+    <link   rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -15,10 +15,10 @@
         
     </div> 
     <div class="body">
-        <h1 class="t1">Lorem ipsum dolor <p class="t2">Lorem Ipsum</p></h1>
+        <h1 id="demo" class="t1">Lorem ipsum dolor <p class="t2">Lorem Ipsum</p></h1>
         <p class="h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam blanditiis quidem impedit sed rerum tempore repellendus expedita,<br> ex, officia labore corrupti pariatur consequuntur voluptate? Non distinctio pariatur </p>
-        <button type="button" class="b1">Button1</button>
-        <button type="button" class="b2">Button2</button>
+        <button onclick="changetext()" type="button" class="b1">Button1</button>
+        <button onclick="change_text()" type="button" class="b2">Button2</button>
         <div class="text">
             <p class="b">HTML Formatting:</p>
             <p>This is an Italic Test</p>
@@ -40,9 +40,17 @@
         </div>
         <iframe src="https://recruitment.alcheringa.in/task/1" height="300" width="400" title="Iframe Example" class="frame"></iframe>
         <img src="bg.jpg" class="image" width="400" height="300" >
-        <a href="https://www.youtube.com/" >Youtube</a>
-        <a href="https://www.facebook.com/" >Facebook</a>
-        <a href="https://www.instagram.com/" >Instagram</a>
+        <a class="l1" href="https://www.youtube.com/" target="_blank" >Youtube</a>
+        <a class="l2" href="https://www.facebook.com/" >Facebook</a>
+        <a class="l3" href="https://www.instagram.com/" >Instagram</a>
     </div>
+    <script>
+        function change_text(){
+            document.getElementById("demo").innerHTML = "You clicked the button 2";
+        }
+        function changetext(){
+            document.getElementById("demo").innerHTML = "You clicked the button 1";
+        }
+        </script>
 </body>
 </html>
